@@ -32,8 +32,8 @@ background: #000;
       width: 100%;
       max-width: 650px;
       text-align: center;
+     animation: roomEnter 0.8s ease-out;
     }
-
     .room {
       font-size: 13px;
       letter-spacing: 6px;
@@ -144,7 +144,18 @@ grid-template-columns: 1fr;      gap: 12px;
         font-size: 32px;
       }
     }
-  </style>
+ @keyframes roomEnter {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+   </style>
 </head>
 
 
