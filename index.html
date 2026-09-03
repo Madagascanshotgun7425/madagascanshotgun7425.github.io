@@ -2,30 +2,220 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>ROOM101</title>
+  <title>ROOM101</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at 20% 20%, #1c1c1c 0%, transparent 35%),
+        radial-gradient(circle at 80% 80%, #151515 0%, transparent 35%),
+        #050505;
+
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      padding: 40px 20px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 650px;
+      text-align: center;
+    }
+
+    .room {
+      font-size: 13px;
+      letter-spacing: 6px;
+      color: #777;
+      margin-bottom: 25px;
+    }
+
+    .profile {
+      width: 120px;
+      height: 120px;
+      margin: auto;
+      border-radius: 50%;
+
+      background: #111;
+      border: 2px solid #333;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      font-size: 35px;
+      font-weight: bold;
+
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 38px;
+      letter-spacing: 2px;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      color: #888;
+      font-size: 14px;
+      letter-spacing: 3px;
+      margin-bottom: 15px;
+    }
+
+    .bio {
+      color: #aaa;
+      line-height: 1.6;
+      margin-bottom: 35px;
+    }
+
+    .links {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .links a {
+      text-decoration: none;
+      color: white;
+
+      background: rgba(255,255,255,0.05);
+      border: 1px solid #252525;
+
+      padding: 16px;
+      border-radius: 10px;
+
+      transition: 0.25s;
+    }
+
+    .links a:hover {
+      background: white;
+      color: black;
+      transform: translateY(-3px);
+    }
+
+    .about {
+      margin-top: 50px;
+      padding-top: 30px;
+      border-top: 1px solid #222;
+    }
+
+    .about h2 {
+      font-size: 13px;
+      letter-spacing: 4px;
+      color: #777;
+      margin-bottom: 15px;
+    }
+
+    .about p {
+      color: #aaa;
+      line-height: 1.7;
+    }
+
+    footer {
+      margin-top: 50px;
+      color: #444;
+      font-size: 12px;
+      letter-spacing: 2px;
+    }
+
+    @media (max-width: 500px) {
+      .links {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+    }
+  </style>
 </head>
+
 
 <body>
 
-    <h1>ROOM101</h1>
+  <main class="container">
 
-    <p>Welcome to my corner of the internet.</p>
+    <div class="room">
+      ROOM101
+    </div>
 
-    <h2>My Socials</h2>
+    <div class="profile">
+      C
+    </div>
 
-    <a href="#">Instagram</a>
-    <br><br>
+    <h1>CAM</h1>
 
-    <a href="#">TikTok</a>
-    <br><br>
+    <div class="subtitle">
+      IT • TECH • CREATIVE
+    </div>
 
-    <a href="#">Twitch</a>
-    <br><br>
+    <p class="bio">
+      Welcome to my corner of the internet.
+      Building, learning, creating and figuring things out as I go.
+    </p>
 
-    <a href="#">YouTube</a>
+
+    <div class="links">
+
+      <a href="#" target="_blank">
+        Instagram
+      </a>
+
+      <a href="#" target="_blank">
+        TikTok
+      </a>
+
+      <a href="#" target="_blank">
+        Twitch
+      </a>
+
+      <a href="#" target="_blank">
+        YouTube
+      </a>
+
+      <a href="#" target="_blank">
+        GitHub
+      </a>
+
+      <a href="mailto:YOUR-EMAIL-HERE">
+        Email
+      </a>
+
+    </div>
+
+
+    <section class="about">
+
+      <h2>ABOUT</h2>
+
+      <p>
+        Information Technology student with hands-on experience
+        troubleshooting computers, hardware, software and networking.
+        Currently building my skills and working toward a career in IT.
+      </p>
+
+    </section>
+
+
+    <footer>
+      ROOM101 • 2026
+    </footer>
+
+  </main>
 
 </body>
 
